@@ -5168,8 +5168,8 @@ typedef void (*GLADpostcallback)(void *ret, const char *name, GLADapiproc apipro
 #define GL_ZOOM_Y 0x0D17
 #define GL_Z_EXT 0x87D7
 
-
-#include <KHR/khrplatform.h>
+ 
+#include "../KHR/khrplatform.h"
 typedef unsigned int GLenum;
 typedef unsigned char GLboolean;
 typedef unsigned int GLbitfield;

@@ -1,12 +1,16 @@
 #
-# project: fips-glad
-# 
-fips_begin_lib(glad)
-    fips_files(
-		include/glad/gl.h 
-		include/glad/wgl.h
-		include/glad/KHR/khrplatform.h
-		src/gl.c 
-		src/wgl.c
-    ) 
-fips_end_lib(glad)
+# project: fips-glad\
+#
+cmake_minimum_required(VERSION 2.8)
+
+# include the fips main cmake file
+get_filename_component(FIPS_ROOT_DIR "../fips" ABSOLUTE)
+include("${FIPS_ROOT_DIR}/cmake/fips.cmake")
+
+# include_directories(src)
+fips_setup()
+fips_project(fips-glad)
+fips_add_subdirectory(glad)
+fips_finish()
+
+

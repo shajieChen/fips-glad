@@ -28,8 +28,8 @@
 #ifndef GLAD_WGL_H_
 #define GLAD_WGL_H_
 
-#include <windows.h>
-#include <glad/gl.h>
+#include <windows.h> 
+#include "gl.h"
 
 #define GLAD_WGL
 #define GLAD_OPTION_WGL_LOADER
